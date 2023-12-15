@@ -120,11 +120,11 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             const Text(
               'You have pushed the button this many times:',
+              style: TextStyle(color: Colors.green),
+              selectionColor: Colors.red,
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
+            Text('$_counter',
+                style: const TextStyle(color: Colors.pink, fontSize: 20.0)),
           ],
         ),
       ),
